@@ -1,6 +1,6 @@
 ---
 category: Invoice Operations
-title: 'Update a thing'
+title: 'Fetch Invoice'
 
 layout: nil
 ---
