@@ -1,13 +1,11 @@
 ---
-category: Stuff
-path: '/stuff/:id'
+category: Invoice Operations
 title: 'Update a thing'
-type: 'PUT'
 
 layout: nil
 ---
 
-This method allows the user to retrieve his stuff.
+This method allows the user to retrieve his Invoice Operations.
 
 ### Request
 

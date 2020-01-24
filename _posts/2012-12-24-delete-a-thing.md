@@ -1,11 +1,11 @@
 ---
-category: Stuff
+category: Invoice Operations
 title: 'Delete a thing'
 
 layout: nil
 ---
 
-This method allows the user to post a new thing to his stuff.
+This method allows the user to post a new thing to his Invoice Operations.
 
 ### Request
 

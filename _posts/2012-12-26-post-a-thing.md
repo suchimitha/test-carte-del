@@ -1,8 +1,6 @@
 ---
-category: Stuff
-path: '/stuff'
+category: Invoice Operations
 title: 'Post a thing'
-type: 'POST'
 
 layout: nil
 ---
