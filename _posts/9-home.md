@@ -1,0 +1,42 @@
+---
+title: 'Response status codes'
+
+layout: nil
+---
+
+### Breadwinner API for Xero
+
+## Introduction
+
+Breadwinner global API used to make request to Xero. Request & responses are defined in such a way that, you can make use of them and form the required things for the request and also to handle the response.
+
+We have created two Handlers, one is for Request and another is for Response. They are named as RequestObject and ResponseObject respectively.
+
+Currently, we are providing API to create, update and fetch Xero Contacts, Invoices, Bills, and Purchase Orders from Salesforce to Xero.
+
+Breadwinner Provides Apex classes and methods. Users can use these, in their own custom Apex code to perform there need. The following are the class and methods.
+
+## BreadwinnerAPI Class
+This is a global class where you can access RequestObject and ResponseObject.
+
+# Namespace
+“bw_xero_api01” : Use this name space to access BreadwinnerAPI class and methods.
+
+## BreadwinnerAPI Methods
+The following are instance methods for BreadwinnerAPI.
+
+# Call()
+This is a global method which will return list of Customers or Invoices in the form of BreadwinnerAPI.ResponseObject. It takes two parameters.
+<b>Action</b>: Used to define the type of action that needs to be performed.
+E.g : createCustomer, createInvoice,… see List of actions
+Request: An instance of RequestObject is accepted.
+E.g : BreadwinnerAPI.RequestObject request = new BreadwinnerAPI.RequestObject();
+Note: This is an synchronous method, it will make http callouts. So, to access “BreadwinnerAPI.Call()” method please enable callouts by annotating the future method, or use Queueable Apex.
+eg: @Future(callout=true)
+
+# Signature
+BreadwinnerAPI.ResponseObject call(String Action, BreadwinnerAPI.RequestObject request)
+
+## BreadwinnerAPI inner classes
+RequestObject - Class
+ResponseObject - Class

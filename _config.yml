@@ -2,4 +2,4 @@
 exclude: ['README.markdown']
 permalink: ':title'
 safe: false
-title: 'Carte'
+title: 'Breadwinner API'
